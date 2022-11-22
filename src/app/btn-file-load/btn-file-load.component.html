@@ -1,0 +1,8 @@
+<input type="file" class="file-input" accept=".log,.txt" (change)="onFileSelected($event)" #fileUpload>
+
+<div class="file-upload">
+
+    {{fileName || "Ningun archivo seleccionado"}}
+ 
+    <button type="button" class="btn btn-primary" (click)="fileUpload.click()">Cargar archivo</button>
+ </div>

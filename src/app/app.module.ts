@@ -1,14 +1,18 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
+import { BtnFileLoadComponent } from './btn-file-load/btn-file-load.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    BtnFileLoadComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
